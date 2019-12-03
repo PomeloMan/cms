@@ -6,7 +6,7 @@ export default {
       key: 'id', // 表格行ID
       data: [], // 表格数据
       cacheData: [], // 表格数据缓存
-      page: 0, // 表格页
+      page: 1, // 表格页
       pageSize: 10, // 表格每页数据
       total: 0, // 表格数据总数
       selectedRows: [], // 选中行
