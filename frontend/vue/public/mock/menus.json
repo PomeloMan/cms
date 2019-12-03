@@ -1,0 +1,89 @@
+[
+  {
+    "id": 10,
+    "pid": 0,
+    "type": 0,
+    "url": "/main/dashboard",
+    "name": "Dashboard",
+    "icon": "dashboard",
+    "children": [
+      {
+        "id": 11,
+        "pid": 10,
+        "type": 0,
+        "url": "/main/dashboard/antv-g2",
+        "name": "Antv-G2",
+        "icon": "line-chart"
+      },
+      {
+        "id": 12,
+        "pid": 10,
+        "type": 0,
+        "url": "/main/dashboard/echarts",
+        "name": "Echarts",
+        "icon": "line-chart"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "pid": 0,
+    "type": 0,
+    "url": "/main/project",
+    "name": "Project Management",
+    "icon": "project"
+  },
+  {
+    "id": 1000,
+    "pid": 0,
+    "type": 0,
+    "name": "System Management",
+    "icon": "setting",
+    "children": [
+      {
+        "id": 1010,
+        "pid": 1000,
+        "type": 0,
+        "url": "/main/system/user",
+        "name": "User Management",
+        "icon": "user",
+        "children": [
+          {
+            "id": 1011,
+            "pid": 1010,
+            "type": 1,
+            "url": "/main/system/user/user/*",
+            "name": "User Profile",
+            "icon": "profile"
+          }
+        ]
+      },
+      {
+        "id": 1020,
+        "pid": 1000,
+        "type": 0,
+        "url": "/main/system/role",
+        "name": "Role Management",
+        "icon": "safety",
+        "children": [
+          {
+            "id": 1021,
+            "pid": 1020,
+            "type": 1,
+            "url": "/main/system/user/role/*",
+            "name": "Role Detail",
+            "icon": "profile"
+          }
+        ]
+      },
+      {
+        "id": 1030,
+        "pid": 1000,
+        "type": 0,
+        "url": "/main/system/menu",
+        "name": "Menu Management",
+        "icon": "safety"
+      }
+    ]
+  }
+]

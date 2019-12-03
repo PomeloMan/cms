@@ -1,0 +1,60 @@
+// @import '/node_modules/ant-design-vue/dist/antd.min.css';
+@import "./css/common.scss";
+@import "./css/ant.custom.scss";
+@import "./css/constant.scss";
+
+/** 内容模块，每一个子页面都带有此属性
+ * @reference /src/pages/main.vue
+ * <template>
+ *   <router-view class="container"></router-view>
+ * </template> 
+ */
+.container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  // 自定义内容
+  .scroll-wrapper {
+    overflow: auto;
+    padding: 0 16px 24px;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 12px;
+    }
+    &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+      border-radius: 10px;
+      background: #e6d8d8;
+    }
+
+    .content-wrapper {
+      min-height: 100%;
+      background-color: white;
+    }
+  }
+
+  // 表格内容
+  .table-content-wrapper {
+    margin: 0 16px;
+    background-color: white;
+  }
+
+  // 内容高度设置
+  .scroll-wrapper,
+  .table-content-wrapper {
+    // 默认情况下，页面都有 app-header 和 app-footer 标签，如果没有单独在指定页面添加样式覆盖此高度
+    height: calc(100% - #{$app-header-height} - #{$app-footer-height}); // .container - .app-header - .app-footer
+  }
+  .scroll-wrapper.no-header,
+  .table-content-wrapper.no-header {
+    height: calc(100% - #{$app-footer-height});
+  }
+  .scroll-wrapper.no-footer,
+  .table-content-wrapper.no-footer {
+    height: calc(100% - #{$app-header-height});
+  }
+  .scroll-wrapper.no-header.no-footer,
+  .table-content-wrapper.no-header.no-footer {
+    height: 100%;
+  }
+}

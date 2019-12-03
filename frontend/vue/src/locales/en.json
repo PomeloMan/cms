@@ -1,0 +1,14 @@
+{
+  "message": "hello i18n !!",
+  "common": {
+    "new": "New"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "system": "System Management",
+    "user": "User Management",
+    "role": "Role Management",
+    "auth": "Auth Management",
+    "menu": "Menu Management"
+  }
+}

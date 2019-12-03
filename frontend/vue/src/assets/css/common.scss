@@ -1,0 +1,26 @@
+/**
+* 通用样式库
+*/
+.no-padding {
+  padding: 0;
+}
+
+// 字号
+.fs-13 {
+  font-size: 13px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+
+// 滚动条
+.scroll-bar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 12px;
+  }
+  &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 10px;
+    background: #e6d8d8;
+  }
+}

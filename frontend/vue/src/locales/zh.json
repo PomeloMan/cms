@@ -1,0 +1,30 @@
+{
+  "message": "你好 i18n !!",
+  "common": {
+    "new": "新增",
+    "save": "保存",
+    "cancel": "取消",
+    "edit": "编辑",
+    "delete": "删除",
+    "import": "导入",
+    "export": "导出",
+    "export_template": "导出模板",
+    "export_data": "导出数据",
+    "confirm_delete": "是否确认删除?",
+    "confirm_ok": "确认",
+    "confirm_cancel": "取消",
+    "confirm_save_cancel": "是否取消保存?",
+    "file_upload_success": "文件上传成功",
+    "file_upload_failure": "文件上传失败",
+    "save_success": "保存成功",
+    "save_failure": "保存失败"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "system": "系统管理",
+    "user": "用户管理",
+    "role": "角色管理",
+    "auth": "权限管理",
+    "menu": "菜单管理"
+  }
+}
